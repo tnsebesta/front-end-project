@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   }
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+background-color: #060606;
+   }
+a {
+    text-decoration: none;
+   }
+li {
+    list-style: none;
+   }
+
+
+
+
+/******************************************************************/
+/************************* NAVBAR STYLING *************************/
+/******************************************************************/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #060606;
+    color: rgb(241, 232, 232);
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: auto;
+   }
+   .nav-links a {
+    color: rgb(158, 160, 159);
+   }
+   
+   .logo {
+    font-family: Segoe Script;
+    font-weight: bold;
+    font-size: 90px;
+    
+    font-weight: 600;
+
+    color: #6af48f;
+    text-shadow: 2px 2px 0px  #023312,
+    4px 4px 0px #554006,
+    6px 6px 0px #00c2cb,
+    8px 8px 0px #42eea3,
+    10px 10px 0px #058d49;
+   }
+
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-family: Century Gothic;
+    font-size: 24px;
+   }
+   .menu li:hover {
+    background-color: #238686;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+ 
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgb(7, 110, 110);
+    padding: 1em 0;
+    position: fixed; 
+    display: none;
+    z-index: 999;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #238686;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+
+/******************************************************************/
+/************************* IMAGE STYLING **************************/
+/******************************************************************/
+.imgbox {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    max-height: 100%;
+    max-width: 100%;
+    height:auto
+}
+.center-fit {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/******************************************************************/
+/************************* SEARCH BOX STYLING *********************/
+/******************************************************************/
+    .search-container {
+        padding-top: 16px;
+        padding-bottom: 40px;
+        background-color: #060606;
+        margin: 0;
+    }
+    
+    .search-title {
+        font-size: 22px;
+        text-align: center;
+        font-family: Century Gothic;
+        font-size: 24px;
+        color: rgb(158, 160, 159);
+    }
+    
+    .search-input {
+        width: 100%;
+        padding: 12px 24px;
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        color: #238686;
+        background-color: transparent; 
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #238686;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+        
+        .search-input::placeholder {
+            color: color(#238686 a(0.8));
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+        
+        .search-input:hover,
+        .search-input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #238686;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+
+
+/******************************************************************/
+/************************* RESULTS STYLING ************************/
+/******************************************************************/
+        h1{
+            background-color: #080808;
+            text-align: center;
+            font-family: Segoe Script;
+            font-size: 120px;
+            font-weight: 600;
+            color: #6af48f;
+            text-shadow: 2px 2px 0px  #023312,
+            4px 4px 0px #554006,
+            6px 6px 0px #00c2cb,
+            8px 8px 0px #42eea3,
+            10px 10px 0px #058d49;
+
+        }
+
+        h2{
+            background-color: #050505;
+            text-align: center;
+            color:rgb(158, 160, 159);
+            font-family: 'century gothic';
+            font-size: 40px;
+            padding: 20px;
+        }
+
+        #results {
+            background-color: #238686;
+            text-align: center;
+            color: rgb(244, 238, 238);
+            font-family: 'century gothic';
+            font-size: 24px;
+        }
